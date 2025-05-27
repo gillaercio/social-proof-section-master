@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+
+  --spartan: "spartan", sans-serif;
+  --text-lg: 700 1.5em/150% var(--spartan);
+  --text-md: 500 1.4em/150% var(--spartan);
+  --text-parag: 400 1.3em/150% var(--spartan);
+  /* --text: 400 1.2em/120% var(--spartan); */
+  /* --text-sm: 400 1.1em/120% var(--spartan); */
+  --text-footer: 400 1.2em/150% var(--spartan);
+}

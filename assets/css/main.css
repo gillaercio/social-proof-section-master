@@ -1,0 +1,7 @@
+.attribution {
+  font: var(--text-footer);
+  text-align: center;
+}
+.attribution a {
+  color: var(--Very-Dark-Magenta);
+}

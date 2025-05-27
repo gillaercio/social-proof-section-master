@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
       rel="icon"
@@ -14,48 +15,88 @@
 
     <title>Frontend Mentor | Social proof section</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
-    10,000+ of our users love our products.
+    <main id="content">
+      <h1 class="title-content">10,000+ of our users love our products.</h1>
+      <p class="main-comment">
+        We only provide great products combined with excellent customer service.
+        See what our satisfied customers are saying about our services.
+      </p>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+      <div class="rated-star">
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <span class="rated-star-info">Rated 5 Stars in Reviews</span>
+      </div>
+      <div class="rated-star">
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <span class="rated-star-info">Rated 5 Stars in Report Guru</span>
+      </div>
+      <div class="rated-star">
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <img src="assets/images/icon-star.svg" alt="Golden star icon" />
+        <span class="rated-star-info">Rated 5 Stars in BestTech</span>
+      </div>
 
-    <div class="attribution">
+      <section id="comments">
+        <div class="card">
+          <h3 class="card-name">Colton Smith</h3>
+          <span class="card-stats">Verified Buyer</span>
+          <p class="card-comment">
+            "We needed the same printed design as the one we had ordered a week
+            prior. Not only did they find the original order, but we also
+            received it in time. Excellent!"
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-name">Irene Roberts</h3>
+          <span class="card-stats">Verified Buyer</span>
+          <p class="card-comment">
+            "Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery."
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-name">Anne Wallace</h3>
+          <span class="card-stats">Verified Buyer</span>
+          <p class="card-comment">
+            "Put an order with this company and can only praise them for the
+            very high standard. Will definitely use them again and recommend
+            them to everyone!"
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by
+      <a
+        href="https://github.com/gillaercio/social-proof-section-master"
+        target="_blank"
+        >Gildman Laécio</a
+      >.
+    </footer>
   </body>
 </html>
