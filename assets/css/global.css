@@ -16,10 +16,9 @@ html {
   --White: hsl(0, 0%, 100%);
 
   --spartan: "spartan", sans-serif;
-  --text-lg: 700 1.5em/150% var(--spartan);
-  --text-md: 500 1.4em/150% var(--spartan);
-  --text-parag: 400 1.3em/150% var(--spartan);
-  /* --text: 400 1.2em/120% var(--spartan); */
-  /* --text-sm: 400 1.1em/120% var(--spartan); */
-  --text-footer: 400 1.2em/150% var(--spartan);
+  --text-lg: 800 2.2em/150% var(--spartan);
+  --text-md: 700 1.4em/150% var(--spartan);
+  --text-parag: 600 1.3em/180% var(--spartan);
+  --text-ft: 500 1.4em/150% var(--spartan);
+  --text-footer: 400 1.1em/150% var(--spartan);
 }

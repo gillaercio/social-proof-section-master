@@ -1,7 +1,128 @@
+#body {
+  height: 100%;
+}
+
+#content {
+  max-width: 320px;
+  justify-self: center;
+}
+
+#title-content {
+  display: grid;
+  justify-self: center;
+  text-align: center;
+  width: 160px;
+  padding-block: 10px;
+  font: var(--text-lg);
+  color: var(--Very-Dark-Magenta);
+}
+
+#main-comment {
+  display: grid;
+  justify-self: center;
+  text-align: center;
+  max-width: 300px;
+  padding: 10px;
+  font: var(--text-parag);
+  opacity: .6;
+}
+
+.rated-by-stars {
+  display: grid;
+  gap: 10px;
+  margin-block: 10px;
+}
+
+.rated-by-star {
+  display: grid;
+  gap: 10px;
+  background-color: var(--Light-Grayish-Magenta);
+  align-items: center;
+  justify-self: center;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.stars {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-self: center;
+  max-width: 140px;
+}
+
+.rated-star-info {
+  font: var(--text-md);
+  text-align: center;
+  color: var(--Very-Dark-Magenta);
+}
+
+#comments {
+  display: grid;
+  gap: 10px;
+  justify-self: center;
+  max-width: 300px;
+  padding: 10px;
+  margin-block: 10px;
+}
+
+.cards {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  display: grid;
+  gap: 10px;
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 5px;
+  padding: 22px;
+}
+
+.card-infos {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  max-width: 150px;
+}
+
+.card-name {
+  font: var(--text-md);
+}
+
+.card-stats {
+  font: var(--text-ft);
+}
+
+.card-name, .card-comment {
+  color: var(--White);
+}
+
+.card-stats {
+  color: var(--Soft-Pink);
+}
+
+.card-pic {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.card-comment {
+  font: var(--text-parag);
+}
+
 .attribution {
   font: var(--text-footer);
   text-align: center;
 }
+
 .attribution a {
   color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+
+.attribution a:hover {
+  color: var(--White);
+  background-color: var(--Very-Dark-Magenta);
 }
