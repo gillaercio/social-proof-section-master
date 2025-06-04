@@ -1,17 +1,19 @@
-#body {
-  height: 100%;
+body {
+  height: 100vh;
+  display: grid;
 }
 
 #content {
   max-width: 320px;
   justify-self: center;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 #title-content {
   display: grid;
   justify-self: center;
-  text-align: center;
   width: 160px;
+  text-align: center;
   padding-block: 10px;
   font: var(--text-lg);
   color: var(--Very-Dark-Magenta);
@@ -39,6 +41,7 @@
   background-color: var(--Light-Grayish-Magenta);
   align-items: center;
   justify-self: center;
+  justify-content: center;
   width: 280px;
   padding: 20px;
   border-radius: 10px;
@@ -125,4 +128,114 @@
 .attribution a:hover {
   color: var(--White);
   background-color: var(--Very-Dark-Magenta);
+}
+
+@media screen and (min-width: 992px) {
+  #content {
+    width: 896px;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    padding: 10px;
+    grid-template-areas: 
+    "top-left top-right"
+    "base base";
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  }
+
+  .top-content {
+    display: grid;
+    grid-area: top-left;
+    width: 440px;
+  }
+
+  #title-content {
+    font-size: 3em;
+    width: 260px;
+    padding: 10px;
+  }
+
+  #main-comment {
+    font-size: 1.5em;
+    max-width: 440px;
+  }
+
+  #title-content, #main-comment {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .rated-by-stars {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-area: top-right;
+    width: 446px;
+  }
+
+  .rated-by-star {
+    width: 380px;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .rated-by-star:nth-child(1) {
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .rated-by-star:nth-child(2) {
+    grid-row: 2;
+  }
+
+  .rated-by-star:nth-child(3) {
+    grid-row: 3;
+    justify-self: end;
+  }
+
+  .stars {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-self: center;
+    width: 120px;
+  }
+
+  .rated-star-info {
+    width: 200px;
+  }
+
+  #comments {
+    display: grid;
+    grid-area: base;
+    max-width: 896px;
+    height: 270px;
+  }
+
+  .cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .card {
+    width: 275px;
+  }
+
+  .card:nth-child(1) {
+    grid-column: 1;
+    align-self: start;
+  }
+
+  .card:nth-child(2) {
+    grid-column: 2;
+    align-self: center;
+  }
+
+  .card:nth-child(3) {
+    grid-column: 3;
+    align-self: end;
+  }
+
+  .attribution {
+    font-size: 1.4em;
+  }
 }
